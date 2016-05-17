@@ -61,7 +61,7 @@ read pushgit
 case $pushgit in
 	y )
 	echo "Pushing to $branch\n"
-	git push $branch
+	git push 
 	;;
 	* )
     echo "Not doing anything. Have a nice day!\n";;
