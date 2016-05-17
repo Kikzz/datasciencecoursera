@@ -1,11 +1,11 @@
 #### select branch ####
 
-echo "\nwhich branch are you workin on?\n"
+echo "\nType which branch are you workin on\n"
 # list branches
-git fetch origin
+# git fetch origin
 git branch -a
 
-#get user inout
+#get user input
 read branch
 
 #switch to branch
@@ -60,8 +60,8 @@ read pushgit
 
 case $pushgit in
 	y )
-	echo "Pushing to origin master. Note to self, parametrize folders later\n"
-	git push origin	$branch
+	echo "Pushing to $branch\n"
+	git push $branch
 	;;
 	* )
     echo "Not doing anything. Have a nice day!\n";;
